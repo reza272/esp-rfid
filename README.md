@@ -4,6 +4,8 @@
 
 Access Control system using a cheap MFRC522, PN532 RFID, RDM6300 readers or Wiegand RFID readers and Espressif's ESP8266 Microcontroller. 
 
+[See Demo Here](https://bitadvise.com/esp-rfid/)
+
 [![Showcase Gif](https://raw.githubusercontent.com/esprfid/esp-rfid/stable/demo/showcase.gif)](https://bitadvise.com/esp-rfid/)[![Board](https://raw.githubusercontent.com/esprfid/esp-rfid/stable/demo/board.jpg)](https://www.tindie.com/products/nardev/esp-rfid-relay-board-12v-in-esp8266-board/)
 
 ## Features
@@ -38,20 +40,10 @@ Access Control system using a cheap MFRC522, PN532 RFID, RDM6300 readers or Wieg
 
 Get more information and see accessory options from [Tindie Store](https://www.tindie.com/products/nardev/esp-rfid-relay-board-12v-in-esp8266-board/)
 
-| What are others saying about esp-rfid? |
-| ---- |
-| _“Hi, nice project.”_ – [@Rotzbua]() |
-| _“Your app works like a charm”_ – [@tueddy ]() |
-| _“Just stumbled upon this project while planning to do something similar. Very beautifully done!”_ – [@LifeP]() |
-| _“Hello, I've come across your project and first of all… wow - thanks to all contributors for your hard work!”_ – [@byt3w4rri0r]() |
-| _“Brilliant work.”_ – [@danbicks]() |
-| _“This is an impressive project.”_ – [@appi1]() |
-| _“I'd like to thank every single contributor for creating this epic project.”_ – [@TheCellMc]() |
-| _“Congratulations for your awesome work! This project is absolutely brilliant.”_ – [@quikote]() |
-
 ## Getting Started
 This project still in its development phase. New features (and also bugs) are introduced often and some functions may become deprecated. Please feel free to comment or give feedback.
 
+* [See Demo Here](https://bitadvise.com/esp-rfid/)
 * Get the latest release from [here.](https://github.com/esprfid/esp-rfid/releases)
 * See [Known Issues](https://github.com/esprfid/esp-rfid#known-issues) before starting right away.
 * See [Security](https://github.com/esprfid/esp-rfid#security) for your safety.
@@ -216,6 +208,8 @@ If this project helps you in a way, you can buy us a beer. You can make a donati
 * 2017-12-10 [saschaludwig](https://github.com/saschaludwig)
 * 2018-10-02 Dennis Parsch
 * 2019-01-12 Chris-topher Slater
+
+Nothing says better thank you than a donation.
 
 ## License
 The code parts written by ESP-RFID project's authors are licensed under [MIT License](https://github.com/esprfid/esp-rfid/blob/stable/LICENSE), 3rd party libraries that are used by this project are licensed under different license schemes, please check them out as well.
