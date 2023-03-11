@@ -15,7 +15,7 @@ var config = {
         "ssid": "esp-rfid",
         "wmode": 1,
         "hide": 0,
-        "pswd": "1234",
+        "pswd": "",
         "offtime": 0,
         "dhcp": 1,
         "ip": "",
@@ -169,6 +169,7 @@ function listntp() {
 }
 
 function revcommit() {
+    document.getElementById("jsonholder").innerText = JSON.stringify(config, null, 2);
     $("#revcommit").modal("show");
 }
 
@@ -176,7 +177,7 @@ function uncommited() {
     $("#commit").fadeOut(200, function() {
         $(this).css("background", "gold").fadeIn(1000);
     });
-    document.getElementById("commit").innerHTML = "<h6>You have unsaved configuration, please click here to save changes.</h6>";
+    document.getElementById("commit").innerHTML = "<h6>You have uncommited changes, please click here to review and commit.</h6>";
     $("#commit").click(function() {
         revcommit();
         return false;
@@ -505,7 +506,6 @@ function listSCAN(obj) {
         } else {
             $(".footable-add").click();
             document.getElementById("uid").value = obj.uid;
-            document.getElementById("uid").diabled = true;
             document.getElementById("picctype").value = obj.type;
             document.getElementById("username").value = obj.user;
             document.getElementById("acctype").value = obj.acctype;
