@@ -26,7 +26,7 @@ var config = {
         "apsubnet": "255.255.255.0"
     },
     "hardware": {
-        "readerType": 1,
+        "readerType": 3,
         "wgd0pin": 4,
         "wgd1pin": 5,
         "sspin": 0,
@@ -34,12 +34,12 @@ var config = {
         "wifipin": 255,
         "rtype": 1,
         "ltype": 0,
-        "rpin": 4,
-        "rtime": 400,
+        "rpin": 15,
+        "rtime": 100,
         "buttonpin": 255
     },
     "general": {
-        "hostnm": "esp-rfid",
+        "hostnm": "BK-rfid",
         "restart": 0,
         "pswd": "admin"
     },
@@ -169,7 +169,6 @@ function listntp() {
 }
 
 function revcommit() {
-    document.getElementById("jsonholder").innerText = JSON.stringify(config, null, 2);
     $("#revcommit").modal("show");
 }
 
@@ -177,7 +176,7 @@ function uncommited() {
     $("#commit").fadeOut(200, function() {
         $(this).css("background", "gold").fadeIn(1000);
     });
-    document.getElementById("commit").innerHTML = "<h6>You have uncommited changes, please click here to review and commit.</h6>";
+    document.getElementById("commit").innerHTML = "<h6>You have unsaved changes, please click here to save.</h6>";
     $("#commit").click(function() {
         revcommit();
         return false;
@@ -508,6 +507,7 @@ function listSCAN(obj) {
             document.getElementById("uid").value = obj.uid;
             document.getElementById("picctype").value = obj.type;
             document.getElementById("username").value = obj.user;
+			document.getElementById("username").disabled = true;
             document.getElementById("acctype").value = obj.acctype;
         }
     }
